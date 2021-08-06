@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love to Dream</title>
+</head>
+<body bgcolor="lightpink">
+    <font color="gray">
+    <h1>Love to Dream Survey</h1>
+        <form>
+            <label id="name" for="name">Name</label>
+            <input type="text" id="name" class="formbox" placeholder="Full Name">
+        </form>
+        <br>
+
+        <form>
+            <label id="date">Date</label>
+            <input type="date" id="date">
+        </form>
+        <br>
+
+        <form>
+            <label id="email">Email</label>
+            <input type="email">
+        </form>
+        <br>
+
+        <form>
+            <label id="age">Age (number)</label>
+            <input type="number">
+        </form>
+        <br>
+
+        <form>
+            <label id="mood">Mood</label>
+            <input id="mood" type="text" list="moods"> 
+                <datalist id="moods">
+                    <option value="Great"></option>
+                    <option value="Good"></option>
+                    <option value="Eh"></option>
+                    <option value="Sad"></option>
+                    <option value="Upset"></option>
+                </datalist>
+    </form>
+        <br>
+
+        <form>
+            <p>Recurring?</p>
+        <div>
+            <input type="radio" name="yes" id="yes" value="yes">Yes
+        </div>
+            <input type="radio" name="no" id="no" value="no">No
+        </form>
+        <br>
+
+        <form>
+            <label id="quality">Sleep Quality (checkbox 1-3, 4-7, 8-10) (table explaining numbers)</label>
+            <input type="">
+        </form>
+        <br>
+
+        <form>
+            <label id="description">Short Description (text area)</label>
+            <input type="">
+        </form>
+        <br>
+
+    <button>Submit</button>
+</font>
+</body>
+</html>
