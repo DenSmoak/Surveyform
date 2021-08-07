@@ -5,34 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Love to Dream</title>
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Georama&display=swap');
+    </style>
 </head>
-<body bgcolor="lightpink">
-    <font color="gray">
+<body>
     <div class="container">
         <h1>Love to Dream Survey</h1>
         <form>
             <div>
-                <label id="name" for="name">Name</label>
+                <label id="name" for="name" class="headers">Name</label>
                 <input type="text" id="name" placeholder="Full Name" required>
             </div>            
 
             <div>
-                <label id="date">Date</label>
+                <label id="date" class="headers">Date</label>
                 <input type="date" id="date" required>
             </div>
 
             <div>
-                <label id="email">Email</label>
+                <label id="email" class="headers">Email</label>
                 <input type="email">
             </div>
 
             <div>
-                <label id="age">Age (number)</label>
+                <label id="age" class="headers">Age</label>
                 <input type="number">
             </div> 
 
             <div>
-                <label id="mood">Mood</label>
+                <label id="mood" class="headers">Mood</label>
                 <input id="mood" type="text" list="moods"> 
                     <datalist id="moods">
                         <option value="Great"></option>
@@ -43,20 +47,20 @@
                     </datalist>
             </div>
 
-            <div>
+            <div class="recurring">
                 <p>Recurring?</p>
                 <label>
-                <input type="radio" name="radio" id="yes" value="yes" checked>Yes
+                <input type="radio" name="radio" id="yes" value="yes" class="values" checked>Yes
                 </label>
                 <label>
-                <input type="radio" name="radio" id="no" value="no">No
+                <input type="radio" name="radio" id="no" value="no" class="values">No
                 </label>                
             </div>
 
-            <div>
+            <div class="type">
                 <p>Dream Type:</p>
                 <label>
-                <input name="quality" type="checkbox" value="Nightmare">Nightmare
+                <input name="quality" type="checkbox" value="Nightmare" class="values">Nightmare
                 </label>
                 <label>
                 <input type="checkbox">Awakening
@@ -71,14 +75,19 @@
                 <input type="checkbox">Normal
                 </label>
             </div>
-            <div>
-                <label id="description">Short Description</label>
-                <textarea id="description" name="description" class="description" placeholder="Enter description here"></textarea>
+            <div class="description">
+                <label id="description" class="headers">Short Description</label>
+                <textarea id="description" name="description" class="description" placeholder="Enter description here" rows="13" cols="30"></textarea>
             </div>
 
-            <button>Submit</button>
+            <button class="submit">Submit</button>
         </form>
     </div>
+
+    <!-- <footer>
+        <a href=" https://unsplash.com/photos/v9bnfMCyKbg?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo by Billy Huynh on Unsplash</a>
+     </footer> -->
+     
 </font>
 </body>
 </html>

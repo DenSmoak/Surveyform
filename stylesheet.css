@@ -1,0 +1,74 @@
+body {
+  /* background-color: #f8edeb; */
+  /* background-image: -webkit-radial-gradient(#ffddd2, #edf6f9, #83c5be, #006d77); */
+  background: url("/clouds.jpg");
+  font-family: "Georama", sans-serif;
+  box-sizing: border-box;
+  color: #006d77;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+}
+
+.container {
+  background-color: #ffddd2;
+  width: 50%;
+  max-width: 450px;
+  border: 3px solid #d8e2dc;
+  border-radius: 10px;
+  opacity: 0.63;
+  margin: 1em;
+}
+
+div {
+  padding: 9px;
+}
+
+.headers,
+p {
+  display: block;
+}
+
+label {
+  display: block;
+}
+
+button {
+  color: #006d77;
+  border-color: #d8e2dc;
+  border-radius: 10px;
+  background-color: #f8edeb;
+  display: inline-block;
+}
+
+footer {
+  display: block;
+}
+
+/* Responsive styles */
+
+@media (min-width: 768px) {
+  h1 {
+    display: flex;
+  }
+  .container {
+    width: 75%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .description {
+    width: 600px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+}
